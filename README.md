@@ -1,14 +1,19 @@
-miui-framework-crespo
+miui-framework-crespo 
 =====================
 
+(it's a crespo base but for HTC Shooter)
 10-31-2012 Miui Frameworks (based on 2.10.26)
 
 WIMAX LOCATIONS IN ALL BASES
-wimax in HTC
+============================
+
+**Wimax in HTC Sense 3.6:**
+---------------------------
 app/Phone.apk/smali/com/android/phone/HtcAdvancedSettings$MyHandler.smali
 app/Phone.apk/smali/com/android/phone/HtcCdmaPhoneApp$PhoneAppBroadcastReceiver.smali
 app/Phone.apk/smali/com/android/phone/HtcCdmaPhoneApp.smali
 
+*If all is correct in frameworks and services.jar this should turn it on*
 app/Settings.apk/AndroidManifest.xml
 app/Settings.apk/res/layout/wimax_backoff_rescan.xml
 app/Settings.apk/res/values/ids.xml
@@ -151,7 +156,9 @@ framework/services.jar/smali/com/android/server/location/GpsLocationProvider.sma
 framework/services.jar/smali/com/android/server/NetworkManagementService.smali
 framework/services.jar/smali/com/android/server/WifiService.smali
 
-wimax in crepo
+**wimax in miui crespo**
+-------------------
+
 system/app/MiuiSystemUI.apk/res/values/public.xml
 system/app/MiuiSystemUI.apk/res/values/strings.xml
 system/app/MiuiSystemUI.apk/res/values-en/strings.xml
@@ -201,9 +208,10 @@ system/framework/framework.jar/smali/miui/R$bool.smali
 system/framework/services.jar/build/apk/classes.dex
 system/framework/services.jar/smali/com/android/server/ConnectivityService.smali
 
-wimax in cm10
-US0T9798@US038NBO5NHC4M1 ~/kitchen/ROMzilla3/extracted/DisarmedToaster-0.2.2-shooter.zip/edits/system
-$ grep -iRl "wimax" *
+**wimax in cm10**
+-------------
+*from DisarmedToaster-0.2.2-shooter.zip*
+
 app/CMWimaxSettings.apk/AndroidManifest.xml
 app/CMWimaxSettings.apk/apktool.yml
 app/CMWimaxSettings.apk/res/values/public.xml
